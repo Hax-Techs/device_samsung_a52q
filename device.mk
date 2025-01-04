@@ -16,7 +16,8 @@
 
 DEVICE_PATH := device/samsung/a52q
 
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay \
+                           $(DEVICE_PATH)/overlay-evolution
 
 # call the common setup
 $(call inherit-product, device/samsung/sm7125-common/common.mk)

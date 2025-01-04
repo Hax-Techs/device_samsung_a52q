@@ -1,0 +1,8 @@
+[
+    {
+    "remote"      : "github",
+    "repository"  : "Hax-Techs/device_samsung_sm7125-common",
+    "branch"      : "vic",
+    "target_path" : "device/samsung/sm7125-common"
+    }
+]

@@ -23,8 +23,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common Lineage stuff
+# Inherit some common Evolution-X stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
+EVO_BUILD_TYPE := UNOFFICIAL
+TARGET_HAS_UDFPS := true
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
